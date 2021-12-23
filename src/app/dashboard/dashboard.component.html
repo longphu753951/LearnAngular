@@ -1,0 +1,14 @@
+<h3>Top 4 movie</h3>
+<div>
+  <a
+    *ngFor="let item of topMovie"
+    class="col-1-4"
+    routerLink="/detail/{{item.id}}">
+    <div class="movie-box">
+      <p>{{item.name}}</p>
+    </div>
+  </a>
+</div>
+<div [innerHTML]="testHtml">
+  {{testHtml}}
+</div>

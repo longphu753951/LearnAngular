@@ -1,0 +1,15 @@
+<h2>My favorite movies</h2>
+<div class='parent'>
+  <ol class='movies'>
+    <li
+      *ngFor="let movie of movies"
+      class='movieListItem'
+      routerLink="/detail/{{movie.id}}"
+    >
+      <div>
+        <span>{{movie.name}}</span> - <span>{{movie.releaseYear}}</span>
+      </div>
+    </li>
+  </ol>
+
+</div>
